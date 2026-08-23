@@ -1,0 +1,305 @@
+date,headline,sentiment_label,sentiment_score
+2026-02-23,Strategic partnership signed with tech giant.,positive,0.874
+2026-02-23,Market analysts downgrade the stock expectations.,positive,0.7156
+2026-02-23,CEO steps down amidst internal restructuring.,neutral,0.9382
+2026-02-23,Supply chain issues cause production delays.,positive,0.602
+2026-02-24,Dividend payout increased for shareholders.,positive,0.6277
+2026-02-25,Regulatory probe impacts investor confidence.,positive,0.9458
+2026-02-25,Regulatory probe impacts investor confidence.,positive,0.6367
+2026-02-25,Market analysts downgrade the stock expectations.,positive,0.728
+2026-02-25,Market analysts downgrade the stock expectations.,positive,0.7118
+2026-02-26,Dividend payout increased for shareholders.,positive,0.6146
+2026-02-26,CEO steps down amidst internal restructuring.,negative,0.8095
+2026-02-27,Supply chain issues cause production delays.,negative,0.7059
+2026-03-02,Strategic partnership signed with tech giant.,positive,0.9284
+2026-03-03,Strategic partnership signed with tech giant.,positive,0.8728
+2026-03-03,Supply chain issues cause production delays.,neutral,0.9806
+2026-03-03,Strategic partnership signed with tech giant.,neutral,0.616
+2026-03-03,Regulatory probe impacts investor confidence.,positive,0.7712
+2026-03-04,Regulatory probe impacts investor confidence.,positive,0.9754
+2026-03-04,Company announces strong quarterly earnings.,negative,0.8685
+2026-03-05,Strategic partnership signed with tech giant.,negative,0.7725
+2026-03-05,Strategic partnership signed with tech giant.,negative,0.8787
+2026-03-06,Regulatory probe impacts investor confidence.,neutral,0.9724
+2026-03-09,Regulatory probe impacts investor confidence.,positive,0.8386
+2026-03-09,New product launch exceeds sales forecasts.,positive,0.8208
+2026-03-09,Dividend payout increased for shareholders.,neutral,0.6056
+2026-03-09,Dividend payout increased for shareholders.,positive,0.6367
+2026-03-10,Strategic partnership signed with tech giant.,negative,0.6684
+2026-03-10,Regulatory probe impacts investor confidence.,positive,0.7917
+2026-03-11,Regulatory probe impacts investor confidence.,neutral,0.7692
+2026-03-11,Supply chain issues cause production delays.,positive,0.9702
+2026-03-11,Market analysts downgrade the stock expectations.,positive,0.7461
+2026-03-11,Strategic partnership signed with tech giant.,negative,0.7954
+2026-03-12,Strategic partnership signed with tech giant.,negative,0.8402
+2026-03-13,Strategic partnership signed with tech giant.,negative,0.9382
+2026-03-13,Market analysts downgrade the stock expectations.,negative,0.8244
+2026-03-13,CEO steps down amidst internal restructuring.,negative,0.6501
+2026-03-16,Company announces strong quarterly earnings.,neutral,0.8441
+2026-03-16,Supply chain issues cause production delays.,negative,0.9531
+2026-03-16,Dividend payout increased for shareholders.,positive,0.6837
+2026-03-17,Regulatory probe impacts investor confidence.,positive,0.8411
+2026-03-17,Market analysts downgrade the stock expectations.,positive,0.7244
+2026-03-18,Company announces strong quarterly earnings.,positive,0.9176
+2026-03-18,Market analysts downgrade the stock expectations.,negative,0.8702
+2026-03-19,Company announces strong quarterly earnings.,negative,0.6153
+2026-03-20,CEO steps down amidst internal restructuring.,negative,0.8137
+2026-03-23,New product launch exceeds sales forecasts.,negative,0.8246
+2026-03-24,Strategic partnership signed with tech giant.,positive,0.6975
+2026-03-24,CEO steps down amidst internal restructuring.,positive,0.963
+2026-03-24,Regulatory probe impacts investor confidence.,positive,0.8651
+2026-03-24,Company announces strong quarterly earnings.,neutral,0.6402
+2026-03-25,Dividend payout increased for shareholders.,negative,0.9223
+2026-03-26,Supply chain issues cause production delays.,neutral,0.7518
+2026-03-27,Regulatory probe impacts investor confidence.,negative,0.6356
+2026-03-30,New product launch exceeds sales forecasts.,negative,0.9707
+2026-03-30,CEO steps down amidst internal restructuring.,negative,0.6325
+2026-03-30,New product launch exceeds sales forecasts.,neutral,0.7282
+2026-03-30,Strategic partnership signed with tech giant.,neutral,0.969
+2026-03-31,Market analysts downgrade the stock expectations.,positive,0.9631
+2026-04-01,New product launch exceeds sales forecasts.,negative,0.6218
+2026-04-01,Market analysts downgrade the stock expectations.,neutral,0.7369
+2026-04-01,Market analysts downgrade the stock expectations.,negative,0.8683
+2026-04-02,Dividend payout increased for shareholders.,neutral,0.927
+2026-04-02,Market analysts downgrade the stock expectations.,neutral,0.6284
+2026-04-02,CEO steps down amidst internal restructuring.,neutral,0.6572
+2026-04-02,Strategic partnership signed with tech giant.,positive,0.9848
+2026-04-06,Regulatory probe impacts investor confidence.,positive,0.917
+2026-04-07,Dividend payout increased for shareholders.,negative,0.8938
+2026-04-07,Supply chain issues cause production delays.,negative,0.7879
+2026-04-07,Market analysts downgrade the stock expectations.,negative,0.7654
+2026-04-08,CEO steps down amidst internal restructuring.,positive,0.7921
+2026-04-08,Supply chain issues cause production delays.,positive,0.8229
+2026-04-08,Company announces strong quarterly earnings.,positive,0.6458
+2026-04-09,Dividend payout increased for shareholders.,neutral,0.8275
+2026-04-09,Company announces strong quarterly earnings.,positive,0.7863
+2026-04-09,Dividend payout increased for shareholders.,neutral,0.6872
+2026-04-10,CEO steps down amidst internal restructuring.,positive,0.9783
+2026-04-10,CEO steps down amidst internal restructuring.,positive,0.6169
+2026-04-13,New product launch exceeds sales forecasts.,negative,0.6987
+2026-04-13,Company announces strong quarterly earnings.,negative,0.804
+2026-04-13,Company announces strong quarterly earnings.,neutral,0.7149
+2026-04-14,Regulatory probe impacts investor confidence.,negative,0.7498
+2026-04-15,Strategic partnership signed with tech giant.,negative,0.9739
+2026-04-16,CEO steps down amidst internal restructuring.,negative,0.6416
+2026-04-16,Market analysts downgrade the stock expectations.,neutral,0.6734
+2026-04-16,Supply chain issues cause production delays.,negative,0.6895
+2026-04-16,Strategic partnership signed with tech giant.,positive,0.98
+2026-04-17,Company announces strong quarterly earnings.,positive,0.8091
+2026-04-17,Strategic partnership signed with tech giant.,positive,0.8351
+2026-04-17,CEO steps down amidst internal restructuring.,positive,0.9553
+2026-04-20,Regulatory probe impacts investor confidence.,negative,0.883
+2026-04-20,Dividend payout increased for shareholders.,negative,0.6323
+2026-04-21,Strategic partnership signed with tech giant.,negative,0.6643
+2026-04-21,Strategic partnership signed with tech giant.,negative,0.9161
+2026-04-22,Regulatory probe impacts investor confidence.,positive,0.8317
+2026-04-22,Company announces strong quarterly earnings.,positive,0.9234
+2026-04-22,New product launch exceeds sales forecasts.,neutral,0.7828
+2026-04-23,Dividend payout increased for shareholders.,neutral,0.622
+2026-04-23,CEO steps down amidst internal restructuring.,negative,0.8084
+2026-04-23,CEO steps down amidst internal restructuring.,negative,0.8166
+2026-04-24,Company announces strong quarterly earnings.,negative,0.9314
+2026-04-27,New product launch exceeds sales forecasts.,positive,0.6504
+2026-04-28,Company announces strong quarterly earnings.,negative,0.6892
+2026-04-29,Strategic partnership signed with tech giant.,positive,0.7397
+2026-04-29,Dividend payout increased for shareholders.,positive,0.7943
+2026-04-29,Supply chain issues cause production delays.,neutral,0.8029
+2026-04-29,Dividend payout increased for shareholders.,neutral,0.9775
+2026-04-30,Regulatory probe impacts investor confidence.,neutral,0.8301
+2026-04-30,CEO steps down amidst internal restructuring.,positive,0.8945
+2026-05-01,Dividend payout increased for shareholders.,neutral,0.6831
+2026-05-01,Market analysts downgrade the stock expectations.,positive,0.9824
+2026-05-04,New product launch exceeds sales forecasts.,negative,0.8164
+2026-05-04,Dividend payout increased for shareholders.,negative,0.7358
+2026-05-05,Regulatory probe impacts investor confidence.,neutral,0.7547
+2026-05-06,Supply chain issues cause production delays.,neutral,0.9703
+2026-05-06,Company announces strong quarterly earnings.,positive,0.9284
+2026-05-07,Dividend payout increased for shareholders.,positive,0.6179
+2026-05-07,New product launch exceeds sales forecasts.,negative,0.7282
+2026-05-07,Regulatory probe impacts investor confidence.,negative,0.7332
+2026-05-07,Regulatory probe impacts investor confidence.,neutral,0.6499
+2026-05-08,Strategic partnership signed with tech giant.,positive,0.8499
+2026-05-08,Strategic partnership signed with tech giant.,positive,0.7605
+2026-05-08,Market analysts downgrade the stock expectations.,positive,0.8603
+2026-05-11,CEO steps down amidst internal restructuring.,positive,0.6159
+2026-05-12,CEO steps down amidst internal restructuring.,positive,0.669
+2026-05-12,Supply chain issues cause production delays.,positive,0.8084
+2026-05-13,Market analysts downgrade the stock expectations.,neutral,0.6502
+2026-05-13,Company announces strong quarterly earnings.,positive,0.6153
+2026-05-14,Dividend payout increased for shareholders.,negative,0.6319
+2026-05-14,Company announces strong quarterly earnings.,neutral,0.7471
+2026-05-14,Company announces strong quarterly earnings.,neutral,0.9144
+2026-05-15,Regulatory probe impacts investor confidence.,positive,0.6816
+2026-05-15,Supply chain issues cause production delays.,negative,0.6921
+2026-05-15,CEO steps down amidst internal restructuring.,positive,0.7804
+2026-05-18,Regulatory probe impacts investor confidence.,positive,0.6985
+2026-05-18,New product launch exceeds sales forecasts.,negative,0.9293
+2026-05-19,Dividend payout increased for shareholders.,positive,0.9382
+2026-05-19,Company announces strong quarterly earnings.,positive,0.6946
+2026-05-19,Regulatory probe impacts investor confidence.,neutral,0.6711
+2026-05-20,Dividend payout increased for shareholders.,neutral,0.6348
+2026-05-21,Company announces strong quarterly earnings.,positive,0.7337
+2026-05-21,CEO steps down amidst internal restructuring.,positive,0.9078
+2026-05-21,Dividend payout increased for shareholders.,positive,0.8278
+2026-05-21,Company announces strong quarterly earnings.,positive,0.8907
+2026-05-22,Dividend payout increased for shareholders.,positive,0.7107
+2026-05-22,New product launch exceeds sales forecasts.,neutral,0.8369
+2026-05-22,CEO steps down amidst internal restructuring.,positive,0.9847
+2026-05-22,CEO steps down amidst internal restructuring.,negative,0.6029
+2026-05-26,Dividend payout increased for shareholders.,negative,0.7902
+2026-05-26,Regulatory probe impacts investor confidence.,neutral,0.7112
+2026-05-27,New product launch exceeds sales forecasts.,neutral,0.6313
+2026-05-27,Strategic partnership signed with tech giant.,positive,0.8718
+2026-05-27,Supply chain issues cause production delays.,positive,0.7552
+2026-05-27,Dividend payout increased for shareholders.,negative,0.6021
+2026-05-28,Dividend payout increased for shareholders.,positive,0.8819
+2026-05-29,Market analysts downgrade the stock expectations.,neutral,0.8087
+2026-06-01,Market analysts downgrade the stock expectations.,negative,0.68
+2026-06-01,Company announces strong quarterly earnings.,negative,0.7659
+2026-06-01,Company announces strong quarterly earnings.,negative,0.8066
+2026-06-02,Dividend payout increased for shareholders.,neutral,0.634
+2026-06-02,New product launch exceeds sales forecasts.,positive,0.7876
+2026-06-03,Market analysts downgrade the stock expectations.,positive,0.7313
+2026-06-03,Market analysts downgrade the stock expectations.,negative,0.8141
+2026-06-03,Company announces strong quarterly earnings.,negative,0.9159
+2026-06-04,New product launch exceeds sales forecasts.,negative,0.8965
+2026-06-04,New product launch exceeds sales forecasts.,negative,0.8364
+2026-06-04,Dividend payout increased for shareholders.,negative,0.9625
+2026-06-05,Strategic partnership signed with tech giant.,negative,0.6485
+2026-06-05,New product launch exceeds sales forecasts.,negative,0.68
+2026-06-05,Dividend payout increased for shareholders.,positive,0.889
+2026-06-05,New product launch exceeds sales forecasts.,positive,0.9048
+2026-06-08,New product launch exceeds sales forecasts.,negative,0.9118
+2026-06-09,Dividend payout increased for shareholders.,neutral,0.6919
+2026-06-10,Market analysts downgrade the stock expectations.,negative,0.7233
+2026-06-10,Regulatory probe impacts investor confidence.,positive,0.9185
+2026-06-11,Dividend payout increased for shareholders.,positive,0.7804
+2026-06-11,Company announces strong quarterly earnings.,positive,0.7711
+2026-06-11,Regulatory probe impacts investor confidence.,positive,0.9508
+2026-06-11,Strategic partnership signed with tech giant.,positive,0.626
+2026-06-12,New product launch exceeds sales forecasts.,negative,0.7683
+2026-06-12,Strategic partnership signed with tech giant.,negative,0.7306
+2026-06-12,Company announces strong quarterly earnings.,neutral,0.9427
+2026-06-15,CEO steps down amidst internal restructuring.,neutral,0.8235
+2026-06-15,CEO steps down amidst internal restructuring.,positive,0.7216
+2026-06-15,Supply chain issues cause production delays.,neutral,0.6558
+2026-06-15,New product launch exceeds sales forecasts.,positive,0.8974
+2026-06-16,Regulatory probe impacts investor confidence.,positive,0.9203
+2026-06-16,Supply chain issues cause production delays.,positive,0.7782
+2026-06-17,CEO steps down amidst internal restructuring.,negative,0.8105
+2026-06-17,Market analysts downgrade the stock expectations.,neutral,0.8817
+2026-06-17,Supply chain issues cause production delays.,positive,0.8334
+2026-06-17,CEO steps down amidst internal restructuring.,negative,0.6982
+2026-06-18,Dividend payout increased for shareholders.,neutral,0.9543
+2026-06-18,Market analysts downgrade the stock expectations.,neutral,0.7652
+2026-06-18,CEO steps down amidst internal restructuring.,negative,0.6598
+2026-06-18,Company announces strong quarterly earnings.,neutral,0.6393
+2026-06-22,Supply chain issues cause production delays.,negative,0.8313
+2026-06-22,Strategic partnership signed with tech giant.,negative,0.8717
+2026-06-22,Company announces strong quarterly earnings.,positive,0.854
+2026-06-23,New product launch exceeds sales forecasts.,negative,0.6269
+2026-06-23,Dividend payout increased for shareholders.,negative,0.9644
+2026-06-23,CEO steps down amidst internal restructuring.,negative,0.6479
+2026-06-23,Dividend payout increased for shareholders.,negative,0.9272
+2026-06-24,Regulatory probe impacts investor confidence.,negative,0.9393
+2026-06-24,Regulatory probe impacts investor confidence.,neutral,0.8371
+2026-06-24,Supply chain issues cause production delays.,positive,0.7307
+2026-06-25,Regulatory probe impacts investor confidence.,positive,0.7301
+2026-06-26,Market analysts downgrade the stock expectations.,positive,0.9587
+2026-06-26,New product launch exceeds sales forecasts.,positive,0.7875
+2026-06-26,Supply chain issues cause production delays.,positive,0.6876
+2026-06-26,Company announces strong quarterly earnings.,negative,0.6968
+2026-06-29,Company announces strong quarterly earnings.,neutral,0.6132
+2026-06-29,Dividend payout increased for shareholders.,negative,0.8264
+2026-06-29,Company announces strong quarterly earnings.,neutral,0.6829
+2026-06-30,Supply chain issues cause production delays.,negative,0.779
+2026-06-30,CEO steps down amidst internal restructuring.,positive,0.6333
+2026-06-30,Strategic partnership signed with tech giant.,positive,0.7168
+2026-07-01,Strategic partnership signed with tech giant.,positive,0.7664
+2026-07-02,Company announces strong quarterly earnings.,positive,0.7826
+2026-07-02,Strategic partnership signed with tech giant.,positive,0.7841
+2026-07-02,New product launch exceeds sales forecasts.,positive,0.7147
+2026-07-06,Company announces strong quarterly earnings.,positive,0.8084
+2026-07-06,Regulatory probe impacts investor confidence.,positive,0.8183
+2026-07-06,Regulatory probe impacts investor confidence.,positive,0.7304
+2026-07-07,New product launch exceeds sales forecasts.,negative,0.7062
+2026-07-07,Regulatory probe impacts investor confidence.,negative,0.7594
+2026-07-07,Regulatory probe impacts investor confidence.,negative,0.9275
+2026-07-08,New product launch exceeds sales forecasts.,positive,0.8152
+2026-07-09,Strategic partnership signed with tech giant.,positive,0.7971
+2026-07-09,New product launch exceeds sales forecasts.,positive,0.912
+2026-07-09,Strategic partnership signed with tech giant.,neutral,0.8171
+2026-07-09,Dividend payout increased for shareholders.,positive,0.6948
+2026-07-10,Supply chain issues cause production delays.,neutral,0.9238
+2026-07-10,Dividend payout increased for shareholders.,negative,0.655
+2026-07-10,Regulatory probe impacts investor confidence.,positive,0.9496
+2026-07-10,CEO steps down amidst internal restructuring.,positive,0.887
+2026-07-13,CEO steps down amidst internal restructuring.,positive,0.9418
+2026-07-13,Regulatory probe impacts investor confidence.,positive,0.9481
+2026-07-13,Regulatory probe impacts investor confidence.,positive,0.731
+2026-07-14,Supply chain issues cause production delays.,positive,0.6133
+2026-07-14,Dividend payout increased for shareholders.,positive,0.7597
+2026-07-15,Supply chain issues cause production delays.,positive,0.7148
+2026-07-16,Market analysts downgrade the stock expectations.,neutral,0.6546
+2026-07-16,Regulatory probe impacts investor confidence.,positive,0.9843
+2026-07-17,Company announces strong quarterly earnings.,positive,0.7891
+2026-07-17,CEO steps down amidst internal restructuring.,positive,0.8112
+2026-07-17,Dividend payout increased for shareholders.,positive,0.685
+2026-07-17,Market analysts downgrade the stock expectations.,neutral,0.9839
+2026-07-20,New product launch exceeds sales forecasts.,neutral,0.7062
+2026-07-21,Supply chain issues cause production delays.,negative,0.6459
+2026-07-21,CEO steps down amidst internal restructuring.,positive,0.6262
+2026-07-22,CEO steps down amidst internal restructuring.,negative,0.8809
+2026-07-23,Regulatory probe impacts investor confidence.,neutral,0.7028
+2026-07-23,Supply chain issues cause production delays.,negative,0.833
+2026-07-24,CEO steps down amidst internal restructuring.,positive,0.6684
+2026-07-27,Market analysts downgrade the stock expectations.,positive,0.7494
+2026-07-28,New product launch exceeds sales forecasts.,positive,0.6649
+2026-07-28,New product launch exceeds sales forecasts.,positive,0.6352
+2026-07-29,New product launch exceeds sales forecasts.,positive,0.9265
+2026-07-29,Regulatory probe impacts investor confidence.,negative,0.8804
+2026-07-30,Regulatory probe impacts investor confidence.,positive,0.7857
+2026-07-30,Strategic partnership signed with tech giant.,negative,0.6527
+2026-07-30,Supply chain issues cause production delays.,positive,0.6122
+2026-07-30,Company announces strong quarterly earnings.,positive,0.9282
+2026-07-31,Company announces strong quarterly earnings.,negative,0.6603
+2026-07-31,Company announces strong quarterly earnings.,neutral,0.6416
+2026-08-03,New product launch exceeds sales forecasts.,negative,0.7932
+2026-08-03,New product launch exceeds sales forecasts.,negative,0.7793
+2026-08-03,Supply chain issues cause production delays.,negative,0.9118
+2026-08-03,Supply chain issues cause production delays.,negative,0.602
+2026-08-04,Company announces strong quarterly earnings.,positive,0.9149
+2026-08-04,Regulatory probe impacts investor confidence.,positive,0.9706
+2026-08-04,Strategic partnership signed with tech giant.,positive,0.6338
+2026-08-05,Company announces strong quarterly earnings.,neutral,0.8492
+2026-08-05,Dividend payout increased for shareholders.,positive,0.87
+2026-08-05,Supply chain issues cause production delays.,negative,0.9523
+2026-08-05,CEO steps down amidst internal restructuring.,positive,0.9852
+2026-08-06,Regulatory probe impacts investor confidence.,positive,0.8752
+2026-08-06,Dividend payout increased for shareholders.,negative,0.8168
+2026-08-07,Regulatory probe impacts investor confidence.,positive,0.647
+2026-08-07,Market analysts downgrade the stock expectations.,positive,0.9605
+2026-08-10,Dividend payout increased for shareholders.,negative,0.7849
+2026-08-10,New product launch exceeds sales forecasts.,positive,0.7775
+2026-08-10,Regulatory probe impacts investor confidence.,neutral,0.6144
+2026-08-11,Market analysts downgrade the stock expectations.,neutral,0.647
+2026-08-11,Market analysts downgrade the stock expectations.,negative,0.8068
+2026-08-11,Regulatory probe impacts investor confidence.,negative,0.6255
+2026-08-11,Dividend payout increased for shareholders.,negative,0.81
+2026-08-12,CEO steps down amidst internal restructuring.,negative,0.8029
+2026-08-13,New product launch exceeds sales forecasts.,neutral,0.7628
+2026-08-13,Regulatory probe impacts investor confidence.,neutral,0.6083
+2026-08-14,New product launch exceeds sales forecasts.,negative,0.9662
+2026-08-17,Dividend payout increased for shareholders.,negative,0.7368
+2026-08-17,Supply chain issues cause production delays.,positive,0.6147
+2026-08-17,Regulatory probe impacts investor confidence.,negative,0.9407
+2026-08-18,Regulatory probe impacts investor confidence.,neutral,0.7629
+2026-08-19,New product launch exceeds sales forecasts.,neutral,0.6931
+2026-08-19,Market analysts downgrade the stock expectations.,positive,0.7158
+2026-08-19,Company announces strong quarterly earnings.,positive,0.6911
+2026-08-19,Regulatory probe impacts investor confidence.,positive,0.955
+2026-08-20,Supply chain issues cause production delays.,neutral,0.7527
+2026-08-21,CEO steps down amidst internal restructuring.,negative,0.9112
+2026-08-21,Strategic partnership signed with tech giant.,positive,0.7629
+2026-08-21,Dividend payout increased for shareholders.,negative,0.8343
+2026-08-21,Supply chain issues cause production delays.,negative,0.6651
