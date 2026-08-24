@@ -1,2 +1,14 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Forcer la normalisation des sauts de ligne en LF pour tout le code texte
+* text=auto eol=lf
+
+# Déclarer explicitement les types de fichiers
+*.py text diff=python
+*.md text
+*.sql text
+*.txt text
+*.env text
+
+# Traiter les formats de données / modèles comme des binaires
+*.db binary
+*.pkl binary
+*.csv text
