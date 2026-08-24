@@ -23,9 +23,11 @@ def run_daily_pipeline(ticker: str = "AAPL", company_name: str = "Apple Inc."):
     logging.info("=== Starting Financial NLP Pipeline ===")
     
     # Define file paths at the root of the project
-    db_path = os.path.join(PROJECT_ROOT, "finance_nlp.db")
-    model_path = os.path.join(PROJECT_ROOT, "champion_model.pkl")
+    os.makedirs(os.path.join(PROJECT_ROOT, "SQL"), exist_ok=True)
+    os.makedirs(os.path.join(PROJECT_ROOT, "Data"), exist_ok=True)
     
+    db_path = os.path.join(PROJECT_ROOT, "SQL", "finance_nlp.db")
+    model_path = os.path.join(PROJECT_ROOT, "Data", "champion_model.pkl")
     # ---------------------------------------------------------
     # PHASE 1: LOAD (Database Setup)
     # ---------------------------------------------------------

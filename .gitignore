@@ -1,3 +1,15 @@
-.venv/
+# 1. Sécurité (Cacher les clés API)
+.env
+
+# 2. Bases de données et Modèles ML (Fichiers lourds générés localement)
+*.db
+*.pkl
+
+# 3. Fichiers Python temporaires et de cache
 __pycache__/
+*.pyc
 .ipynb_checkpoints/
+
+# 4. Environnements virtuels
+venv/
+env/

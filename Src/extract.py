@@ -3,6 +3,16 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 import logging
+import os
+from dotenv import load_dotenv # Nouvel import
+
+# Charge les variables cachées du fichier .env
+load_dotenv()
+
+# Récupère la clé de manière sécurisée
+NEWS_API_KEY = os.getenv("NEWS_API_KEY") 
+
+# Configure basic logging...
 
 # Configure basic logging to track the extraction process in the terminal
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
