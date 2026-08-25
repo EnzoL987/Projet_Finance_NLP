@@ -7,33 +7,46 @@
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)
 
 ## 🎯 Contexte du Projet
-Ce projet déploie un pipeline de Machine Learning de bout-en-bout conçu pour prédire la tendance boursière à court terme. Son innovation repose sur l'hybridation des données : il combine l'analyse technique classique des prix (données quantitatives) avec l'analyse du sentiment de l'actualité financière via l'Intelligence Artificielle (données textuelles traitées par FinBERT)[cite: 2].
+Ce projet déploie un pipeline de Machine Learning de bout-en-bout conçu pour prédire la tendance boursière à court terme. Son innovation repose sur l'hybridation des données, on va avoir une combinaison d'analyse technique classique des prix (données quantitatives) avec de l'analyse du sentiment de l'actualité financière via l'Intelligence Artificielle (données textuelles traitées par FinBERT).
 
 ## 🏗️ Architecture du Pipeline
+
 *(Aperçu de la structure des données et du flux ETL)*
 ![Schéma Global](Images/Schéma_global.png)
 
 ## 📂 Structure du Projet
-Le code est architecturé selon les standards de l'ingénierie des données, séparant clairement les étapes d'Extraction, Transformation et Chargement (ETL)[cite: 2]. 
+
+Le code est architecturé selon les standards de l'ingénierie des données, séparant clairement les étapes d'Extraction, Transformation et Chargement (ETL). 
 
 Voici comment naviguer dans le projet :
 
 ```text
-Projet_Finance_NLP/
-├── Data/                   # Stockage des artefacts générés, comme le modèle final (champion_model.pkl)
-├── Images/                 # Sauvegarde des graphiques analytiques (ROC, Matrices, Sentiment, etc.)
-├── Notebooks/              # ⚠️ LISEZ LE RAPPORT ICI ! (Voir section "Résultats")
-│   ├── Data/               # Données synthétiques historiques pour l'exploration
-│   ├── 01_exploration...   # Carnet de recherche et de tests initiaux
-│   └── 02_Rapport_de...    # Le rapport final contenant toutes les analyses et visualisations
-├── SQL/                    # Stockage de la base de données relationnelle SQLite (finance_nlp.db)
-├── Src/                    # Le cœur de l'usine logicielle (Scripts modulaires)
+Projet_Finance_NLP/ 
+├── Data/                         # Stockage des artefacts générés, comme le modèle final (champion_model.pkl)
+│
+├── Images/                       # Sauvegarde des graphiques analytiques (ROC, Matrices, Sentiment, etc.)
+│
+├── Notebooks/              
+│   ├── Data/                     # Données synthétiques historiques pour l'exploration
+│   │
+│   ├── 01_exploration...         # Carnet de recherche et de tests initiaux où les fonctions vont être crées
+│   │
+│   └── 02_Rapport_de_Synthèse    # Le rapport final contenant toutes les analyses et visualisations que je vous conseille de regarder
+│
+│
+├── SQL/                          # Stockage de la base de données relationnelle SQLite (finance_nlp.db)
+│
+├── Src/                    # Source
 │   ├── extract.py          # Fonctions d'extraction via les API (yfinance & NewsAPI)
+│   │
 │   ├── transform.py        # Feature Engineering (calcul du RSI, SMA) et NLP (FinBERT)
+│   │
 │   ├── load.py             # Création du schéma en étoile et insertion SQL
+│   │
 │   └── train.py            # Modélisation ML (XGBoost et Random Forest)
-├── .env                    # Fichier de variables d'environnement (non suivi par Git)
-├── pipeline_run.py         # Le chef d'orchestre : exécute toute la chaîne d'un coup
+│
+├── pipeline_run.py         # Le fichier d'exécution
+│
 └── requirements.txt        # Liste des dépendances Python du projet
 ```
 
