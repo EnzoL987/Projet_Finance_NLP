@@ -74,8 +74,8 @@ pip install -r requirements.txt
 * Configuration de l'API (Optionnel) :
 Le projet utilise l'API NewsAPI pour télécharger les articles de presse. Pour lancer l'extraction vous-même, créez un fichier nommé .env à la racine et ajoutez-y votre clé :
 
-```text
 Plaintext
+```text
 NEWS_API_KEY=votre_cle_api_ici
 ```
 
