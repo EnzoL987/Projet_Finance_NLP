@@ -55,13 +55,14 @@ Projet_Finance_NLP/
 
 Pourquoi cette architecture ?
 
-Modularité (Src/) : Chaque étape du traitement de la donnée est isolée dans un script dédié, ce qui rend le code propre, maintenable et testable.
+* Modularité (Src/) : Chaque étape du traitement de la donnée est isolée dans un script dédié, ce qui rend le code propre, maintenable et testable.
 
-Séparation Stockage/Code (SQL/ & Data/) : Les bases de données et les modèles lourds sont isolés des scripts d'exécution pour respecter les bonnes pratiques de déploiement[cite: 2].
+* Séparation Stockage/Code (SQL/ & Data/) : Les bases de données et les modèles lourds sont isolés des scripts d'exécution pour respecter les bonnes pratiques de déploiement[cite: 2].
 
-Automatisation (pipeline_run.py) : Ce script importe les fonctions de Src/ pour lancer l'ensemble du processus de manière automatisée.
+* Automatisation (pipeline_run.py) : Ce script importe les fonctions de Src/ pour lancer l'ensemble du processus de manière automatisée.
 
 ## ⚙️ Installation et Exécution
+
 Installation des dépendances :
 Assurez-vous d'avoir Python installé, puis exécutez la commande suivante à la racine du projet :
 
