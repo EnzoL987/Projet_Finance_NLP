@@ -1,36 +1,69 @@
 # 📈 Analyseur de Signaux Mixtes (Finance & NLP)
 
-## 🎯 Contexte et Objectifs
-Ce projet est un pipeline de Machine Learning de bout-en-bout (Data Engineering & Data Science) conçu pour prédire la tendance à court terme d'un actif financier (hausse ou baisse à un horizon de 5 jours). 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-171515?style=for-the-badge&logo=xgboost&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)
 
-L'innovation de ce projet repose sur l'hybridation des données : il combine des séries temporelles classiques (historiques de prix, indicateurs techniques) avec le Traitement du Langage Naturel (NLP) appliqué à l'actualité financière quotidienne.
+## 🎯 Contexte du Projet
+Ce projet déploie un pipeline de Machine Learning de bout-en-bout conçu pour prédire la tendance boursière à court terme. Son innovation repose sur l'hybridation des données : il combine l'analyse technique classique des prix (données quantitatives) avec l'analyse du sentiment de l'actualité financière via l'Intelligence Artificielle (données textuelles traitées par FinBERT)[cite: 2].
 
-## 🏗️ Architecture du Pipeline (ETL)
+## 🏗️ Architecture du Pipeline
+*(Aperçu de la structure des données et du flux ETL)*
+![Schéma Global](Images/Schéma_global.png)
 
-Le projet est structuré selon les meilleures pratiques d'ingénierie logicielle avec des scripts modulaires :
+## 📂 Structure du Projet
+Le code est architecturé selon les standards de l'ingénierie des données, séparant clairement les étapes d'Extraction, Transformation et Chargement (ETL)[cite: 2]. 
 
-1. **Extract (`Src/extract.py`) :** 
-   - Récupération des prix via l'API **yfinance**.
-   - Collecte des articles de presse via **NewsAPI**.
-2. **Transform (`Src/transform.py`) :** 
-   - Analyse de sentiment NLP via **FinBERT** (ProsusAI/finbert).
-   - Feature Engineering : Moyennes mobiles (SMA, EMA), Volatilité, RSI.
-3. **Load (`Src/load.py`) :** 
-   - Stockage intermédiaire dans une base de données relationnelle **SQLite** structurée en schéma en étoile (`dim_assets`, `fact_market_data`, `fact_news_sentiment`).
-4. **Train (`Src/train.py`) :** 
-   - Entraînement et comparaison de modèles de classification binaire (**XGBoost** vs **Random Forest**).
+Voici comment naviguer dans le projet :
 
-## 🚀 Installation et Exécution
+```text
+Projet_Finance_NLP/
+├── Data/                   # Stockage des artefacts générés, comme le modèle final (champion_model.pkl)
+├── Images/                 # Sauvegarde des graphiques analytiques (ROC, Matrices, Sentiment, etc.)
+├── Notebooks/              # ⚠️ LISEZ LE RAPPORT ICI ! (Voir section "Résultats")
+│   ├── Data/               # Données synthétiques historiques pour l'exploration
+│   ├── 01_exploration...   # Carnet de recherche et de tests initiaux
+│   └── 02_Rapport_de...    # Le rapport final contenant toutes les analyses et visualisations
+├── SQL/                    # Stockage de la base de données relationnelle SQLite (finance_nlp.db)
+├── Src/                    # Le cœur de l'usine logicielle (Scripts modulaires)
+│   ├── extract.py          # Fonctions d'extraction via les API (yfinance & NewsAPI)
+│   ├── transform.py        # Feature Engineering (calcul du RSI, SMA) et NLP (FinBERT)
+│   ├── load.py             # Création du schéma en étoile et insertion SQL
+│   └── train.py            # Modélisation ML (XGBoost et Random Forest)
+├── .env                    # Fichier de variables d'environnement (non suivi par Git)
+├── pipeline_run.py         # Le chef d'orchestre : exécute toute la chaîne d'un coup
+└── requirements.txt        # Liste des dépendances Python du projet
+```
 
-### Prérequis
-Assurez-vous d'avoir Python 3.9+ installé. Clonez ce dépôt, puis installez les dépendances :
+Pourquoi cette architecture ?
 
-il vous faudra aussi lancez ça : pip install -r requirements.txt
+Modularité (Src/) : Chaque étape du traitement de la donnée est isolée dans un script dédié, ce qui rend le code propre, maintenable et testable.
 
-Lancer le Pipeline Automatisé
+Séparation Stockage/Code (SQL/ & Data/) : Les bases de données et les modèles lourds sont isolés des scripts d'exécution pour respecter les bonnes pratiques de déploiement[cite: 2].
 
-Un script chef d'orchestre permet de lancer la chaîne complète d'extraction, de transformation, de chargement en base SQL et de modélisation prédictive avec une seule commande dans le terminal : python pipeline_run.py
+Automatisation (pipeline_run.py) : Ce script importe les fonctions de Src/ pour lancer l'ensemble du processus de manière automatisée.
 
-## 📊 Résultats et Modélisation
+## ⚙️ Installation et Exécution
+Installation des dépendances :
+Assurez-vous d'avoir Python installé, puis exécutez la commande suivante à la racine du projet :
 
-Le modèle évalue la performance du NLP couplé à la finance en utilisant la classification binaire. Le projet inclut l'extraction de l'importance des variables (Feature Importance) afin de quantifier la valeur ajoutée du sentiment des actualités face aux indicateurs de prix purs.
+Bash
+pip install -r requirements.txt
+Configuration de l'API (Optionnel) :
+Le projet utilise l'API NewsAPI pour télécharger les articles de presse. Pour lancer l'extraction vous-même, créez un fichier nommé .env à la racine et ajoutez-y votre clé :
+
+Plaintext
+NEWS_API_KEY=votre_cle_api_ici
+Lancer la chaîne complète :
+Une seule commande suffit pour déclencher l'ETL, l'analyse NLP, l'insertion SQL et l'entraînement du modèle :
+
+Bash
+python pipeline_run.py
+
+## 📊 Résultats et Analyse Détaillée
+Le sentiment des actualités permet-il réellement d'améliorer les prédictions boursières par rapport à un modèle uniquement basé sur les prix ?
+
+👉 Pour découvrir la réponse, les performances du modèle XGBoost, et toutes les visualisations interactives, rendez-vous dans le rapport de synthèse :
+📂 Voir le Notebook : 02_Rapport_de_Synthese.ipynb
