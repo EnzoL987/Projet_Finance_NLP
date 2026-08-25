@@ -1,4 +1,4 @@
-# 📈 Analyseur de Signaux Mixtes (Finance & NLP)
+# Analyseur de Signaux Mixtes (Finance & NLP)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -12,6 +12,7 @@ Ce projet déploie un pipeline de Machine Learning de bout-en-bout conçu pour p
 ## 🏗️ Architecture du Pipeline
 
 *(Aperçu de la structure des données et du flux ETL)*
+
 ![Schéma Global](Images/Schéma_global.png)
 
 ## 📂 Structure du Projet
@@ -77,7 +78,8 @@ python pipeline_run.py
 
 ## 📊 Résultats et Analyse Détaillée
 
-Le sentiment des actualités permet-il réellement d'améliorer les prédictions boursières par rapport à un modèle uniquement basé sur les prix ?
+L'intégration de l'analyse textuelle offre-t-elle un véritable avantage prédictif face à un modèle quantitatif classique ? Plongez dans le rapport de synthèse pour découvrir la réponse à travers une analyse détaillée, appuyée par les métriques de performance (Accuracy, F1-Score) et nos visualisations interactives :
 
-> 🚀 **Découvrir l'analyse complète, les métriques (Accuracy, F1-Score) et les graphiques :**  
 > 👉 [**Ouvrir le Rapport de Synthèse (Notebook 02)**](Notebooks/02_Rapport_de_Synthese.ipynb)
+
+
