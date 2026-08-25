@@ -23,9 +23,9 @@ Voici comment naviguer dans le projet :
 
 ```text
 Projet_Finance_NLP/ 
-├── Data/                         # Stockage des artefacts générés, comme le modèle final (champion_model.pkl)
+├── Data/                   # Stockage des artefacts générés, comme le modèle final (champion_model.pkl)
 │
-├── Images/                       # Sauvegarde des graphiques analytiques (ROC, Matrices, Sentiment, etc.)
+├── Images/                 # Sauvegarde des graphiques analytiques (ROC, Matrices, Sentiment, etc.)
 │
 ├── Notebooks/              
 │   ├── Data/                     # Données synthétiques historiques pour l'exploration
@@ -35,16 +35,18 @@ Projet_Finance_NLP/
 │   └── 02_Rapport_de_Synthèse    # Le rapport final contenant toutes les analyses et visualisations que je vous conseille de regarder
 │
 │
-├── SQL/                          # Stockage de la base de données relationnelle SQLite (finance_nlp.db)
+├── SQL/                    # Stockage de la base de données relationnelle SQLite (finance_nlp.db)
 │
 ├── Src/                    # Source
-│   ├── extract.py          # Fonctions d'extraction via les API (yfinance & NewsAPI)
+│   ├── extract.py                # Fonctions d'extraction via les API (yfinance & NewsAPI)
 │   │
-│   ├── transform.py        # Feature Engineering (calcul du RSI, SMA) et NLP (FinBERT)
+│   ├── transform.py              # Feature Engineering (calcul du RSI, SMA) et NLP (FinBERT)
 │   │
-│   ├── load.py             # Création du schéma en étoile et insertion SQL
+│   ├── load.py                   # Création du schéma en étoile et insertion SQL
 │   │
-│   └── train.py            # Modélisation ML (XGBoost et Random Forest)
+│   └── train.py                  # Modélisation ML (XGBoost et Random Forest)
+│
+├── .env                    # Fichier de variables d'environnement (non suivi par Git mais nécessaire d'en créer un si vous voulez exécuter)
 │
 ├── pipeline_run.py         # Le fichier d'exécution
 │
