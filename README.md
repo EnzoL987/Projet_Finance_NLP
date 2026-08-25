@@ -76,7 +76,8 @@ Bash
 python pipeline_run.py
 
 ## 📊 Résultats et Analyse Détaillée
+
 Le sentiment des actualités permet-il réellement d'améliorer les prédictions boursières par rapport à un modèle uniquement basé sur les prix ?
 
-👉 Pour découvrir la réponse, les performances du modèle XGBoost, et toutes les visualisations interactives, rendez-vous dans le rapport de synthèse :
-📂 Voir le Notebook : 02_Rapport_de_Synthese.ipynb
+> 🚀 **Découvrir l'analyse complète, les métriques (Accuracy, F1-Score) et les graphiques :**  
+> 👉 [**Ouvrir le Rapport de Synthèse (Notebook 02)**](Notebooks/02_Rapport_de_Synthese.ipynb)
