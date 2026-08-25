@@ -32,7 +32,7 @@ Projet_Finance_NLP/
 │   │
 │   ├── 01_exploration...         # Carnet de recherche et de tests initiaux où les fonctions vont être crées
 │   │
-│   └── 02_Rapport_de_Synthèse    # Le rapport final contenant toutes les analyses et visualisations que je vous conseille de regarder
+│   └── 02_Rapport_de_Synthèse    # Le rapport final contenant toutes les analyses et visualisations
 │
 │
 ├── SQL/                    # Stockage de la base de données relationnelle SQLite (finance_nlp.db)
@@ -46,7 +46,7 @@ Projet_Finance_NLP/
 │   │
 │   └── train.py                  # Modélisation ML (XGBoost et Random Forest)
 │
-├── .env                    # Fichier de variables d'environnement (non suivi par Git mais nécessaire d'en créer un si vous voulez exécuter)
+├── .env                    # Fichier de variables d'environnement (non suivi par Git mais nécessaire pour la production)
 │
 ├── pipeline_run.py         # Le fichier d'exécution
 │
