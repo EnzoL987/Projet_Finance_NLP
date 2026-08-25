@@ -63,21 +63,29 @@ Pourquoi cette architecture ?
 
 ## ⚙️ Installation et Exécution
 
-Installation des dépendances :
+* Installation des dépendances :
 Assurez-vous d'avoir Python installé, puis exécutez la commande suivante à la racine du projet :
 
 Bash
+
+```text
 pip install -r requirements.txt
-Configuration de l'API (Optionnel) :
+```
+* Configuration de l'API (Optionnel) :
 Le projet utilise l'API NewsAPI pour télécharger les articles de presse. Pour lancer l'extraction vous-même, créez un fichier nommé .env à la racine et ajoutez-y votre clé :
 
+```text
 Plaintext
 NEWS_API_KEY=votre_cle_api_ici
-Lancer la chaîne complète :
+```
+
+* Lancer la chaîne complète :
 Une seule commande suffit pour déclencher l'ETL, l'analyse NLP, l'insertion SQL et l'entraînement du modèle :
 
 Bash
+```text
 python pipeline_run.py
+```
 
 ## 📊 Résultats et Analyse Détaillée
 
