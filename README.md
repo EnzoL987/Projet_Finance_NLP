@@ -1,4 +1,4 @@
-# Analyseur de Signaux Mixtes (Finance & NLP)
+# Hybrid Stock Market Forecasting : Integrating NLP and Technical Analysis
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -6,91 +6,96 @@
 ![XGBoost](https://img.shields.io/badge/XGBoost-171515?style=for-the-badge&logo=xgboost&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)
 
-## 🎯 Contexte du Projet
-Ce projet déploie un pipeline de Machine Learning de bout-en-bout conçu pour prédire la tendance boursière à court terme. Son innovation repose sur l'hybridation des données, on va avoir une combinaison d'analyse technique classique des prix (données quantitatives) avec de l'analyse du sentiment de l'actualité financière via l'Intelligence Artificielle (données textuelles traitées par FinBERT).
+## 🎯 Project Background
 
-## 🏗️ Architecture du Pipeline
+This project implements an end-to-end machine learning pipeline designed to predict short-term stock market trends. Its innovation lies in data hybridisation, combining traditional technical price analysis (quantitative data) with sentiment analysis of financial news using artificial intelligence (textual data processed by FinBERT).
 
-*(Aperçu de la structure des données et du flux ETL)*
+## 🏗️ Pipeline Architecture
 
-![Schéma Global](Images/Schéma_global.png)
+*(Overview of the data structure and ETL flow)*
 
-## 📂 Structure du Projet
+![Overall Diagram](Images/Schéma_global.png)
 
-Le code est architecturé selon les standards de l'ingénierie des données, séparant clairement les étapes d'Extraction, Transformation et Chargement (ETL). 
+## 📂 Project Structure
 
-Voici comment naviguer dans le projet :
+The code is structured in accordance with data engineering standards, clearly separating the Extraction, Transformation and Loading (ETL) stages.
+
+Here’s how to navigate the project:
 
 ```text
 Projet_Finance_NLP/ 
-├── Data/                   # Stockage des artefacts générés, comme le modèle final (champion_model.pkl)
+├── Data/                   # Storage of generated artefacts, such as the final model (champion_model.pkl)
 │
-├── Images/                 # Sauvegarde des graphiques analytiques (ROC, Matrices, Sentiment, etc.)
+├── Images/                 # Saving analytical charts (ROC, matrices, sentiment, etc.)
 │
 ├── Notebooks/              
-│   ├── Data/                     # Données synthétiques historiques pour l'exploration
+│   ├── Data/                     # Historical synthetic data for exploration
 │   │
-│   ├── 01_exploration...         # Carnet de recherche et de tests initiaux où les fonctions vont être crées
+│   ├── 01_exploration...         # Research and initial testing log where the functions have been created
 │   │
-│   └── 02_Rapport_de_Synthèse    # Le rapport final contenant toutes les analyses et visualisations
+│   └── 02_Rapport_de_Synthèse    # The final report containing all the analyses and visualisations
 │
 │
-├── SQL/                    # Stockage de la base de données relationnelle SQLite (finance_nlp.db)
+├── SQL/                    # Storage of the SQLite relational database (finance_nlp.db)
 │
 ├── Src/                    # Source
-│   ├── extract.py                # Fonctions d'extraction via les API (yfinance & NewsAPI)
+│   ├── extract.py                # Data extraction functions via APIs (yfinance & NewsAPI)
 │   │
-│   ├── transform.py              # Feature Engineering (calcul du RSI, SMA) et NLP (FinBERT)
+│   ├── transform.py              # Feature engineering (calculation of RSI, SMA) and NLP (FinBERT)
 │   │
-│   ├── load.py                   # Création du schéma en étoile et insertion SQL
+│   ├── load.py                   # Creating the star schema and SQL insertion
 │   │
-│   └── train.py                  # Modélisation ML (XGBoost et Random Forest)
+│   └── train.py                  # Machine Learning Modelling (XGBoost and Random Forest)
 │
-├── .env                    # Fichier de variables d'environnement (non suivi par Git mais nécessaire pour la production)
+├── .env                    # Environment variables file (not tracked by Git but required for production)
 │
-├── pipeline_run.py         # Le fichier d'exécution
+├── pipeline_run.py         # The executable file
 │
-└── requirements.txt        # Liste des dépendances Python du projet
+└── requirements.txt        # List of the project’s Python dependencies
 ```
 
-Pourquoi cette architecture ?
+Why this architecture?
 
-* Modularité (Src/) : Chaque étape du traitement de la donnée est isolée dans un script dédié, ce qui rend le code propre, maintenable et testable.
+* Modularity (Src/): Each stage of data processing is isolated in a dedicated script, making the code clean, maintainable and testable.
 
-* Séparation Stockage/Code (SQL/ & Data/) : Les bases de données et les modèles lourds sont isolés des scripts d'exécution pour respecter les bonnes pratiques de déploiement[cite: 2].
+* Separation of storage and code (SQL/ & Data/): Databases and resource-intensive models are isolated from the execution scripts to comply with deployment best practices[cite: 2].
 
-* Automatisation (pipeline_run.py) : Ce script importe les fonctions de Src/ pour lancer l'ensemble du processus de manière automatisée.
+* Automation (pipeline_run.py): This script imports the functions from Src/ to launch the entire process automatically.
 
-## ⚙️ Installation et Exécution
+## ⚙️ Installation and Execution
 
-* Installation des dépendances :
-Assurez-vous d'avoir Python installé, puis exécutez la commande suivante à la racine du projet :
+* Installing dependencies:
+
+Ensure you have Python installed, then run the following command from the project root directory:
 
 Bash
 
 ```text
 pip install -r requirements.txt
 ```
-* Configuration de l'API (Optionnel) :
-Le projet utilise l'API NewsAPI pour télécharger les articles de presse. Pour lancer l'extraction vous-même, créez un fichier nommé .env à la racine et ajoutez-y votre clé :
+* API configuration (optional):
+The project uses the NewsAPI to download news articles. To run the extraction yourself, create a file called .env in the root directory and add your key to it:
 
 Plaintext
+
 ```text
 NEWS_API_KEY=votre_cle_api_ici
 ```
 
-* Lancer la chaîne complète :
-Une seule commande suffit pour déclencher l'ETL, l'analyse NLP, l'insertion SQL et l'entraînement du modèle :
+* Run the entire pipeline:
+A single command is all it takes to trigger the ETL, the NLP analysis, the SQL insertion and the model training:
 
 Bash
+
 ```text
 python pipeline_run.py
 ```
 
-## 📊 Résultats et Analyse Détaillée
+## 📊 Results and Detailed Analysis
 
-L'intégration de l'analyse textuelle offre-t-elle un véritable avantage prédictif face à un modèle quantitatif classique ? Plongez dans le rapport de synthèse pour découvrir la réponse à travers une analyse détaillée, appuyée par les métriques de performance (Accuracy, F1-Score) et nos visualisations interactives :
+Does incorporating text analysis offer a genuine predictive advantage over a traditional quantitative model? Delve into the summary report to discover the answer through a detailed analysis, supported by performance metrics (Accuracy, F1-Score) and our interactive visualisations:
 
-> 👉 [**Ouvrir le Rapport de Synthèse (Notebook 02)**](Notebooks/02_Rapport_de_Synthese.ipynb)
+> 👉 [**Open the Summary Report (Notebook 02)**](Notebooks/02_Rapport_de_Synthese.ipynb)
 
 
+##
