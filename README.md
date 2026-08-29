@@ -93,7 +93,7 @@ python pipeline_run.py
 
 ## 📊 Results and Detailed Analysis
 
-Does incorporating text analysis offer a genuine predictive advantage over a traditional quantitative model? Delve into the summary report to discover the answer through a detailed analysis, supported by performance metrics (Accuracy, F1-Score) and our interactive visualisations:
+Does incorporating text analysis offer a genuine predictive advantage over a traditional quantitative model? Delve into the summary report to discover the answer through a detailed analysis, supported by performance metrics (Accuracy, F1-Score) and our interactive visualisations :
 
 > 👉 [**Open the Summary Report (Notebook 02)**](Notebooks/02_Rapport_de_Synthese.ipynb)
 
