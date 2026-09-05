@@ -1,15 +1,16 @@
 import os
 import sys
 import logging
+import joblib
 
-# 1. Define absolute paths to ensure the script never loses its files
+# Defining absolute paths to ensure the script never loses its files
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # Add the project root to Python's memory so it can find the 'Src' folder
 sys.path.append(PROJECT_ROOT)
 
-# Now we can import the modules we just built!
+# Now we can import the modules we just built
 from Src.extract import fetch_market_data, fetch_financial_news
-from Src.transform import analyze_financial_sentiment
+from Src.transform import analyze_financial_sentiment, calculate_technical_indicators
 from Src.load import initialize_database, insert_asset_dimension, insert_market_data, insert_news_sentiment
 from Src.train import fetch_ml_data, train_and_evaluate_models
 
@@ -28,6 +29,7 @@ def run_daily_pipeline(ticker: str = "AAPL", company_name: str = "Apple Inc."):
     
     db_path = os.path.join(PROJECT_ROOT, "SQL", "finance_nlp.db")
     model_path = os.path.join(PROJECT_ROOT, "Data", "champion_model.pkl")
+
     # ---------------------------------------------------------
     # PHASE 1: LOAD (Database Setup)
     # ---------------------------------------------------------
@@ -67,6 +69,34 @@ def run_daily_pipeline(ticker: str = "AAPL", company_name: str = "Apple Inc."):
         train_and_evaluate_models(df_ml_ready, save_path=model_path)
     else:
         logging.warning("No data available for Machine Learning training.")
+        
+    # ---------------------------------------------------------
+    # PHASE 6: INFERENCE (Live Prediction for today)
+    # ---------------------------------------------------------
+    logging.info("--- Phase 6: Live Prediction ---")
+    try:
+        # 1. We're waking the "champion" up using the secure absolute path
+        modele_en_production = joblib.load(model_path)
+        
+        # 2. We calculate technical indicators on the full dataset we just extracted
+        df_live = calculate_technical_indicators(df_ml_ready)
+        
+        # 3. We select the exact 10 columns and isolate the very last row (.iloc[[-1]])
+        donnees_du_jour = df_live[['Open', 'Close', 'Volume', 'SMA_20', 'EMA_20', 
+                                   'Daily_Return', 'Volatility_14', 'RSI_14', 
+                                   'daily_sentiment', 'news_volume']].iloc[[-1]]
+        
+        # 4. Inference
+        prediction = modele_en_production.predict(donnees_du_jour)
+        
+        # 5. Signal Interpretation
+        if prediction[0] == 1:
+            logging.info("📈 SIGNAL FINAL : The trend suggests you should BUY (5-day bullish forecast)")
+        else:
+            logging.info("📉 SIGNAL FINAL : The trend suggests you SHOULD DO NOTHING or SELL (Downward trend expected)")
+            
+    except Exception as e:
+        logging.error(f"Erreur lors de l'inférence : {e}")
         
     logging.info("=== Pipeline Execution Completed Successfully ===")
 
